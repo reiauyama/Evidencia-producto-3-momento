@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/style.css">
+    <title>Document</title>
+</head>
+<body>
+     <section id="inicio" class="inicio">
+    <form action="" id="registro">
+        <label for="usuario"> Usuario</label>
+        <input  class="inputsInicio" type="text" id="usuario">
+
+        <label for="Contrasena">Contraseña</label>
+        <input class="inputsInicio" type="password" name="" id="contrasena">
+        <input type="button" id="btnRegistrar" class="boton" value="Registrarse">
+        <input type="button" id="btnIniciar"value="Iniciar" class="boton"></input>
+    </form>
+    <h3 class="retorno" id="retorno"></h3> 
+</section>
+ <main id="panel" class="panel">
+      <header class="header">
+        <div class="logo">
+            <h3>PPH</h3>
+            <h4 class="xd">Prisma</h4>
+         </div>
+        <h3>Tope maximo de: </h3>
+        <h3 id="topeMaximo">0</h3>
+        <h2 id="cantidadTope"></h2>
+        <button id="listar">Listar</button>
+        <button id="crear">Crear</button>
+        <button id="cerrar">Cerrar Sesion</button>
+      </header>
+      <section class="contenido">
+        <section id="sectionBuscar" class="sectionBuscar">
+           <div class="barra" id="barra">
+                <h3>listar por :</h3>
+                <button id="negocios">Negocios</button>
+                <button id="diversion">Diversión</button>
+                <button id="transporte">Transporte</button>
+                <button id="comida">Comida</button>
+                <button id="todos">Todos</button>
+            </div>
+            <div class="divCards"></div>
+        </section>
+        <section id="sectionListar">Listar</section>
+        <section id="sectionCrear" class="sectionCrear">
+            
+            <form action="" class="formCreacion">
+                <label for="tope">Tope maximo</label>
+                <div class="creacion" id="creacion"></div>
+                <input type="text" name="" id="tope">
+                <label for="Valor">Valor</label>
+                <input type="text" id="valor">
+                <select name="select" id="categoria">
+                    <option value="" selected>--Elija una categoria--</option>
+                    <option value="negocios">Negocios</option>
+                    <option value="diversion">Diversión</option>
+                    <option value="transporte">Transporte</option>
+                    <option value="comida">Comida</option>
+                </select>
+                <label for="descripcion">Nombre o descripcion</label>
+                <input type="text" name="" id="descripcion">
+                <input type="button" id="btnCrear" value="Crear gasto"></input>
+                <h3 id="aviso1"></h3>
+            </form>
+        </div>
+        </section>
+      </section>
+    </main>
+ 
+    
+ <script src="assets/js/colores.js" type="module"></script>
+ <script src="model/modelGastos.js" type="module"></script>
+ <script  src="controller/controllerGastos.js" type="module"></script>
+ 
+
+</body>
+</html>
